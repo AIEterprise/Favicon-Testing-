@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Sandbox | Brand Architecture Test</title>
+
+    <!-- 
+      THE FAVICON ENGINE (GitHub Pages Optimized)
+      Using "./" ensures it resolves correctly whether hosted at username.github.io/ or username.github.io/repo-name/
+      Added '?v=1.0' cache-buster so updates render instantly on deploy.
+    -->
+    <link rel="icon" type="image/png" href="./favicon.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png?v=1.0">
+
+    <!-- Tailwind CSS CDN for instant high-end minimalist styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#121212',
+                        mintGreen: '#A7F3D0',
+                        seaGreen: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F9FAFB] text-charcoal min-h-screen flex flex-col justify-between font-sans antialiased selection:bg-mintGreen">
+
+    <!-- Header / Navigation Preview -->
+    <header class="border-b border-gray-200/80 bg-white/70 backdrop-blur-md sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Mini Logo Preview Box in Header -->
+                <div class="w-8 h-8 rounded-md bg-charcoal flex items-center justify-center overflow-hidden border border-gray-200">
+                    <img src="./favicon.png?v=1.0" alt="Logo" class="w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%2310B981\'><rect width=\'24\' height=\'24\' fill=\'%23121212\'/><circle cx=\'12\' cy=\'12\' r=\'6\' fill=\'%23A7F3D0\'/></svg>'">
+                </div>
+                <span class="font-bold tracking-tight text-lg">Ecosystem Sandbox</span>
+            </div>
+            <span class="text-xs font-mono bg-gray-100 text-gray-500 px-2.5 py-1 rounded-full border border-gray-200/60">Status: Live Testing</span>
+        </div>
+    </header>
+
+    <!-- Main Verification Interface -->
+    <main class="max-w-4xl mx-auto px-6 py-20 flex-grow flex flex-col justify-center items-center text-center">
+        
+        <!-- Tab Simulation Graphic -->
+        <div class="w-full max-w-xl bg-white rounded-xl shadow-xl shadow-gray-200/50 border border-gray-200/80 overflow-hidden mb-12 transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="bg-gray-100 px-4 py-3 flex items-center space-x-2 border-b border-gray-200">
+                <div class="flex space-x-1.5">
+                    <span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-400 inline-block"></span>
+                </div>
+                <!-- Simulated Browser Tab -->
+                <div class="bg-white text-xs text-gray-600 px-4 py-1.5 rounded-md shadow-sm border border-gray-200/40 flex items-center space-x-2 max-w-[180px] truncate ml-4">
+                    <img src="./favicon.png?v=1.0" class="w-3.5 h-3.5 object-contain" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%2310B981\'><rect width=\'24\' height=\'24\' fill=\'%23121212\'/><circle cx=\'12\' cy=\'12\' r=\'6\' fill=\'%23A7F3D0\'/></svg>'">
+                    <span class="font-medium tracking-tight">Your Custom Site</span>
+                </div>
+            </div>
+            <div class="p-8 bg-gray-50/50 text-left font-mono text-xs text-gray-500 space-y-2">
+                <p class="text-seaGreen font-semibold">// BROWSER LOG VERIFICATION:</p>
+                <p>➔ Fetching assets from root directory...</p>
+                <p>➔ Parsing link[rel="icon"] ──&gt; <span class="text-charcoal font-semibold">./favicon.png</span> <span class="text-blue-500">200 OK</span></p>
+                <p>➔ Micro-branding architecture successfully applied.</p>
+            </div>
+        </div>
+
+        <!-- Messaging -->
+        <h1 class="text-4xl font-black tracking-tight text-charcoal sm:text-5xl mb-6">
+            Favicon Architecture Live.
+        </h1>
+        <p class="text-base text-gray-600 max-w-xl leading-relaxed mb-8">
+            Look straight up at your <strong class="text-charcoal font-semibold">actual browser tab</strong> right now. If your asset path is correct, your custom brand logo is perfectly anchored in the browser interface.
+        </p>
+
+        <!-- Debug / Troubleshooting Guide -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl w-full">
+            <div class="p-5 bg-white rounded-lg border border-gray-200/80">
+                <h3 class="font-bold text-sm mb-2 flex items-center text-charcoal">
+                    <span class="w-2 h-2 rounded-full bg-seaGreen mr-2"></span> Still showing the fallback?
+                </h3>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    Browsers cache favicons aggressively. Open your GitHub URL in an <strong>Incognito Window</strong> or clear your browser site data to force an instant hard refresh.
+                </p>
+            </div>
+            <div class="p-5 bg-white rounded-lg border border-gray-200/80">
+                <h3 class="font-bold text-sm mb-2 flex items-center text-charcoal">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span> Subdirectory Safe
+                </h3>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    The code uses relative syntax (<code class="bg-gray-100 text-red-500 px-1 py-0.5 rounded">./</code>). This safely forces GitHub Pages to look inside your specific repository folder.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200/60 py-6 bg-white text-center">
+        <p class="text-xs text-gray-400 font-mono">Build Stack: HTML5 / Tailwind CSS Engine / GitHub Pages Architecture</p>
+    </footer>
+
+</body>
+</html>
